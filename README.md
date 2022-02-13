@@ -2,7 +2,7 @@
 ## UBPP- Using IPFS, Running on the ganache blockchain(testing/development) and ethereum during deployment.
 
 ## About
-This website gives the use to record his/her files on the ethereum blockchain. It can act as a place to store all import files such as aadhar card picture, drivers license, x-rays, blood sample reports, covid reports and so on, on the blockchain!! It also houses a medical history report which can store all important information any docotr needs to know! Fill it once and never again, and you can edit anytime! The user can store the data with the comfort of knowing only he/she can view his data.
+This website gives the user the chance to record his/her files on the ethereum blockchain. It can act as a place to store all import files such as aadhar card picture, drivers license, x-rays, blood sample reports, covid reports and so on, on the blockchain!! It also houses a medical history report which can store all important information any docotr needs to know! Fill it once and never again, and you can edit anytime! The user can store the data with the comfort of knowing only he/she can view his data.
 
 ## Instructions to run the dApp
 - Download the repository and extract the files.
