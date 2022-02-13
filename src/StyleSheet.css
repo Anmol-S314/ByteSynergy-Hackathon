@@ -1,0 +1,27 @@
+#headerfont{
+    font-family: "Times New Roman", Times, serif;
+}
+
+#Button1{
+	position: relative;
+	left: -10px;
+	top: -30px
+}
+
+#Button2{
+	position: relative;
+	left: 10px;
+	top: -30px;
+}
+
+#Footer_homepage{
+	background: "#222";
+    fontSize: ".8rem";
+    color: "#fff";
+    position: "absolute";
+    bottom: 0;
+    padding: "1rem";
+    margin: 0;
+    width: "100%";
+    opacity: ".5";
+}
