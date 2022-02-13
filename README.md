@@ -21,3 +21,8 @@ This is a website to store patient records on the ethereum blockchain. It also h
 ## Working of the Website
 ![image](https://user-images.githubusercontent.com/31868336/111102249-e13c7380-8508-11eb-9aea-afbd7dda377f.png)
 
+## Future Scope
+- Add authentication functionality wherein a user with a username and password can access their files making it user friendly
+- Display the details of the form as a downloadable pdf for the future reference of the patient.
+- Make a sub-section to display vital information such as blood oxygen(SpO2) for easy access.
+- Make a Hospital Section so that the patient can submit the details to their respective health care centers
