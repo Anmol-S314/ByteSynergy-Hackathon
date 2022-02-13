@@ -2,17 +2,16 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Component } from 'react';
 import Web3 from 'web3';
-import TumblrCloneDapp from './abis/TumblrCloneDapp.json'
+
+import UBPP from './abis/UBPP.json'
 import LandingPage from './components/pages/LandingPage'
 import LoginPage from './components/pages/LoginPage'
 import MedicalForm from './components/pages/MedicalForm'
 import App from './components/App'
 import Footer from './components/pages/Footer'
+import TermsOfService from './components/pages/TermsOfService'
 
 import './App.css'
-
-const ipfsClient = require('ipfs-http-client')
-const ipfs = ipfsClient({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' })
 
 class AppDir extends Component
 {
@@ -31,7 +30,7 @@ class AppDir extends Component
     else {
       window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
     }
-    await this.loadBlockchainData()
+	await this.loadBlockchainData()
   }
 
   async loadBlockchainData() {
@@ -40,9 +39,9 @@ class AppDir extends Component
     this.setState({ account: accounts[0] })
 
     const networkId = await web3.eth.net.getId()
-    const networkData = TumblrCloneDapp.networks[networkId]
+    const networkData = UBPP.networks[networkId]
     if(networkData) {
-      const app = new web3.eth.Contract(TumblrCloneDapp.abi, networkData.address)
+      const app = new web3.eth.Contract(UBPP.abi, networkData.address)
       this.setState({ app })
       const mformsCount = await app.methods.mformCount().call()
       this.setState({ mformsCount })
@@ -106,7 +105,7 @@ class AppDir extends Component
 
     }
     else{
-      window.alert('TumblrCloneDapp contract not deployed to detected network.')
+      window.alert('UBPP contract not deployed to detected network.')
     }
   }
 
@@ -300,6 +299,7 @@ class AppDir extends Component
                     eno={this.state.eno}
                     ex ={this.state.ex}
                     mforms={this.state.mforms} /> }/>
+					<Route path="/TermsOfService" element = {<TermsOfService/>}/>	
                 </Routes>
             </div>
     );
