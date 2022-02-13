@@ -2,7 +2,7 @@
 ## UBPP- Using IPFS, Running on the ganache blockchain(testing/development) and ethereum during deployment.
 
 ## About
-This website gives the user the chance to record his/her files on the ethereum blockchain. It can act as a place to store all import files such as aadhar card picture, drivers license, x-rays, blood sample reports, covid reports and so on, on the blockchain!! It also houses a medical history report which can store all important information any docotr needs to know! Fill it once and never again, and you can edit anytime! The user can store the data with the comfort of knowing only he/she can view his data.
+This website gives the user the chance to record his/her files on the ethereum blockchain. It can act as a place to store all import files such as aadhar card picture, drivers license, x-rays, blood sample reports, covid reports and so on, on the blockchain!! It also houses a medical history report which can store all important information any docotor needs to know! Fill it once and never again, and you can edit anytime! The user can store the data with the comfort of knowing only he/she can view his data.
 
 ## Instructions to run the dApp
 - Download the repository and extract the files.
@@ -25,9 +25,8 @@ This website gives the user the chance to record his/her files on the ethereum b
 
 
 ## Future Scope
-- Add authentication functionality with hospitals world wide, with doctors, patients using a common portal. All reports can be shared using the DApp Any Appointment, prescription and medicines can be alerted to the user by notifications on a dashboard or his/her mobile/laptop.
+- Add authentication functionality with hospitals world wide, with doctors, patients using a common portal. All reports can be shared using the DApp and any Appointment, prescription and medicines can be alerted to the user by notifications on a dashboard or his/her mobile/laptop.
 - Do file parsing and use AI/ML to run automation scripts to help the user.
-- Deploy the frontend too on ipfs, making the entire program decentralised. Even the frontend.
+- Deploy the frontend too on ipfs, making the entire program decentralised.
 - Run a real time script and measure spo2, heart rate, stress levels, mental and sleep health.
-- Make a Hospital Section so that the patient can submit the details to their respective health care centers.
-- There are infite possibilities and all are feasible as there is the comfort of knowing The backend is completely decentralised. Only the User can access his/her data and no on else. There is no single point of failure, can be applied even to the advancement of edge computing. Blockchain is the future!
+- There are infite possibilities and all are feasible as there is the comfort of knowing the backend is completely decentralised. Only the User can access his/her data and no on else. There is no single point of failure, can even be applied even to the advancement of edge computing. Blockchain is the future!
