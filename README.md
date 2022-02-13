@@ -29,4 +29,4 @@ This website gives the user the chance to record his/her files on the ethereum b
 - Do file parsing and use AI/ML to run automation scripts to help the user.
 - Deploy the frontend too on ipfs, making the entire program decentralised.
 - Run a real time script and measure spo2, heart rate, stress levels, mental and sleep health.
-- There are infite possibilities and all are feasible as there is the comfort of knowing the backend is completely decentralised. Only the User can access his/her data and no on else. There is no single point of failure, can even be applied even to the advancement of edge computing. Blockchain is the future!
+- There are infinite possibilities and all are feasible as there is the comfort of knowing the backend is completely decentralised. Only the User can access his/her data and no on else. There is no single point of failure, can even be applied even to the advancement of edge computing. Blockchain is the future!
