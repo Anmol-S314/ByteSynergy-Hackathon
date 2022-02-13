@@ -1,9 +1,13 @@
-import TumblrCloneDapp from '../abis/TumblrCloneDapp.json'
+import UBPP from '../abis/UBPP.json'
 import React, { Component } from 'react';
 import Navbar from './Navbar'
 import Main from './Main'
 import Web3 from 'web3';
 import 'antd/dist/antd.css';
+
+// const fs = require('fs')
+// const pdfparse = require('pdf-parse')
+// const pdffile = fs.readFileSync('https://ipfs.infura.io/ipfs/${image.hash}')
 
 //Declare IPFS
 const ipfsClient = require('ipfs-http-client')
@@ -22,9 +26,9 @@ class App extends Component {
     this.setState({ account: accounts[0] })
     // Network ID
     const networkId = await web3.eth.net.getId()
-    const networkData = TumblrCloneDapp.networks[networkId]
+    const networkData = UBPP.networks[networkId]
     if(networkData) {
-      const app = new web3.eth.Contract(TumblrCloneDapp.abi, networkData.address)
+      const app = new web3.eth.Contract(UBPP.abi, networkData.address)
       this.setState({ app })
       const imagesCount = await app.methods.imageCount().call()
       const docsCount = await app.methods.docCount().call()
@@ -39,8 +43,6 @@ class App extends Component {
       }
       for (var i = 1; i <= docsCount; i++) {
         const doc = await app.methods.docs(i).call()
-        console.log("loading blockchain")
-        console.log(doc.description)
         this.setState({
           docs: [...this.state.docs, doc]
         })
@@ -51,7 +53,7 @@ class App extends Component {
       })
       this.setState({ loading: false})
     } else {
-      window.alert('TumblrCloneDapp contract not deployed to detected network.')
+      window.alert('UBPP contract not deployed to detected network.')
     }
   }
 
@@ -86,12 +88,9 @@ class App extends Component {
     })
   }
 
-
-
   uploadDoc = description => {
     console.log("Submitting file to ipfs...")
-    console.log("In uploaddoc")
-    console.log(description)
+
     //adding file to the IPFS
     ipfs.add(this.state.buffer, (error, result) => {
       console.log('Ipfs result', result)
@@ -121,7 +120,7 @@ class App extends Component {
       app: null,
       images: [],
       docs: [],
-      loading: true,
+      loading: true
     }
 
     this.uploadImage = this.uploadImage.bind(this)
