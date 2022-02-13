@@ -1,6 +1,7 @@
 import React from 'react'
-import '../../App.css'
+import { Link } from 'react-router-dom'
 
+import '../../App.css'
 import '../../StyleSheet.css'
 
 // export default function Footer() {
@@ -14,7 +15,13 @@ import '../../StyleSheet.css'
 
 export default function Footer() {
     return (
-        <p className="text-center" style={ FooterStyle }>Designed & coded by <a href="https://izemspot.netlify.com" target="_blank" rel="noopener noreferrer">IZEMSPOT</a></p>
+        <p className="text-center" style={ FooterStyle }>
+			Meet the developers and read terms of service by clicking
+			{/* <a href="https://izemspot.netlify.com" target="_blank" rel="noopener noreferrer">
+				Here
+				</a> */}
+				<Link to="/termsOfService"> Here</Link>
+				</p>
     )
 }
 

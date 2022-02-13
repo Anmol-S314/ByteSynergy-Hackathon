@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 
 import '../../App.css'
 import '../../StyleSheet.css'
-import BackgroundImage from '../../assets/images/bg.png'
-import AppDir from '../../AppDir'
+import BackgroundImage from '../../assets/images/Beach2.jpg'
 
 export default function LandingPage() {
     return (
