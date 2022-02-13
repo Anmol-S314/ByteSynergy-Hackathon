@@ -9,10 +9,9 @@ This is a website to store patient records on the ethereum blockchain. It also h
 - Install Ganache from the website [link](https://trufflesuite.com/ganache/).
 - Next download the truffle framework using `npm install -g truffle`
 - We need to install the MetaMask extension to authenticate the user.
-- Finally run the following commands and the website will run on the localhost 
- `truffle migrate--reset`
- \
- `npm start`
+- Finally run the following commands and the website will run on the localhost \
+ 1.`truffle migrate --reset` \
+ 2.`npm start`
 
 
 ## Snapshot of the Website
